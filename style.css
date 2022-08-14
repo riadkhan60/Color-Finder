@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap');
+
+html {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  height: 100vh;
+  font-family: 'Nunito Sans', sans-serif;
+}
+
+header{
+  display: block;
+  width: max-content;
+  margin: auto;
+  margin-top: 5rem;
+}
+
+.button-group {
+  display: inline-flex;
+  align-items: center;
+  gap: 19px;
+  margin: auto;
+}
+
+.Button{
+  filter: drop-shadow(0px 0px 4px rgba(109, 90, 90, 0.25));
+  background: white;
+  padding: 2px 32px;
+  cursor: pointer;
+}
+
+.color-boxes
+{
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  gap: 1rem;
+  justify-items: center;
+  align-items: center;
+  width: max-content;
+  margin: auto;
+  margin-top: 5rem;
+
+}
+.color-box
+{
+  width: 285px;
+  height: 85px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  border-radius: 1rem;
+}
+
+.color-box:hover h4
+{
+  visibility: visible;
+
+}
+.color-box h4{
+  font-size: 1rem;
+  background: rgb(0, 0, 0);
+  color: white;
+  padding: 0 1rem;
+  border-radius: 1rem;
+  visibility: hidden;
+}
+
+@media  (max-width: 768px) {
+
+  .color-boxes
+{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  gap: 1rem;
+  justify-items: center;
+  align-items: center;
+  width: max-content;
+  margin: auto;
+  margin-top: 5rem;
+
+}
+
+  .color-box
+{
+  width: 100px;
+  height: 85px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  border-radius: 1rem;
+}
+
+.color-box h4{
+  font-size: 13px;
+  background: rgb(0, 0, 0);
+  color: white;
+  padding: 0 0.5rem;
+  border-radius: 0;
+  visibility: hidden;
+}
+
+.color-box:last-child{
+  display: none;
+}
+}
